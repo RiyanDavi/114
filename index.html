@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin-User Messaging</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin-User Messaging</h1>
+    
+    <!-- Admin Section -->
+    <h2>Admin</h2>
+    <textarea id="adminMessage" placeholder="Admin: Write your message here..."></textarea>
+    <button id="adminSaveButton">Save Admin Message</button>
+    <p id="adminSavedMessage">No message from admin yet.</p>
+    
+    <!-- User Section -->
+    <h2>User</h2>
+    <textarea id="userMessage" placeholder="User: Write your message here..."></textarea>
+    <button id="userSaveButton">Save User Message</button>
+    <form id="emailForm" method="POST" action="https://api.web3forms.com/submit">
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+      <input type="hidden" id="emailUserMessage" name="message" value="">
+      <input type="hidden" name="subject" value="New User Message from Admin-User Messaging App">
+      <input type="hidden" name="name" value="User">
+      <input type="hidden" name="email" value="no-reply@example.com">
+    </form>
+    <p id="userSavedMessage">No message from user yet.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

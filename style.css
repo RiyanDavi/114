@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1, h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  textarea {
+
+    width: 90%;
+    height: 80px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  button { 
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  p#adminSavedMessage, p#userSavedMessage {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+
+@media (max-width: 400px){
+    .container {
+        max-width: 250px;
+      }
+    
+    button { 
+        font-size: 14px;
+        width: 100%;
+    }
+    p {
+        font-size: 14px;
+      }
+    p#adminSavedMessage, p#userSavedMessage {
+        min-height: 50px;
+    }
+}
